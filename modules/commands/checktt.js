@@ -6,7 +6,7 @@ module.exports.config = {
 	description: "dik",
 	commandCategory: "Group",
 	usages: "checktt args",
-	cooldowns: 5,
+	cooldowns: 35,
 	info: [
 		{
 			key: 'args => all',
@@ -28,7 +28,7 @@ module.exports.config = {
         }
 	],
     envConfig: {
-        "maxColumn": 10
+        "maxColumn": 35
     }
 };
 

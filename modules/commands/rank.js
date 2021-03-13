@@ -6,7 +6,7 @@ module.exports.config = {
 	description: "Lấy rank hiện tại của bạn trên hệ thống bot, remake rank_card from canvacord",
 	commandCategory: "System",
 	usages: "rank",
-	cooldowns: 5,
+	cooldowns: 40,
 	dependencies: ["fs-extra","axios","path","canvas","jimp", "request"]
 };
 

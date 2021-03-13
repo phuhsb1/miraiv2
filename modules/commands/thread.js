@@ -1,5 +1,5 @@
 module.exports.config = {
-	name: "thread",
+	name: "banbox",
 	version: "0.0.1",
 	hasPermssion: 2,
 	credits: "CatalizCS",

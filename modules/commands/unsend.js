@@ -1,5 +1,5 @@
 module.exports.config = {
-	name: "unsend",
+	name: "gỡ",
 	version: "1.0.0",
 	hasPermssion: 0,
 	credits: "SpermLord",

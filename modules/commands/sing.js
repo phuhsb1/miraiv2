@@ -6,7 +6,7 @@ module.exports.config = {
 	description: "Phát nhạc thông qua link YouTube, SoundCloud hoặc từ khoá tìm kiếm",
 	commandCategory: "Media",
 	usages: "sing [Text]",
-	cooldowns: 10,
+	cooldowns: 20,
 	dependencies: ["ytdl-core","simple-youtube-api","soundcloud-downloader","fluent-ffmpeg","@ffmpeg-installer/ffmpeg"],
 	info: [
 		{
@@ -91,7 +91,7 @@ module.exports.run = async function({ api, event, args, __GLOBAL, client }) {
 			return api.sendMessage(`🎼 Có ${link.length} kết quả trùng với từ khoá tìm kiếm của bạn: \n${msg}\nHãy reply(phản hồi) chọn một trong những tìm kiếm trên`, event.threadID,(error, info) => client.handleReply.push({ name: "sing", messageID: info.messageID, author: event.senderID, link }), event.messageID);
 		}
 		catch (error) {
-			api.sendMessage("Thông tin của YouTube đã xảy ra sự cố, lỗi: " + error.message, event.threadID, event.messageID);
+			api.sendMessage("Thông tin của YouTube đã xảy ra sự cố, lỗi: " + error.message, event.threadID, event.messageID);	
 		}
 	}
 }

@@ -5,7 +5,7 @@ module.exports.config = {
 	credits: "SpermLord",
 	description: "Gửi tin nhắn tới các nhóm!",
 	commandCategory: "System",
-	usages: "sendnoti [Text]",
+	usages: "thongbao [Text]",
 	cooldowns: 5,
 	info: [
 		{

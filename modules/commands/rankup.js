@@ -28,7 +28,7 @@ module.exports.event = async function({ api, event, Currencies, Users, client })
 		if (level == 1) return;
 		let name = (await Users.getInfo(senderID)).name;
 		let msg, formPush;
-		(typeof clientData.customRankup == "undefined") ? msg = "Trình độ chém gió của {name} đã đạt tới level {level}" : msg = clientData.customRankup;
+		(typeof clientData.customRankup == "undefined") ? msg = "Trình độ cào phím của {name} đã đạt tới level {level}" : msg = clientData.customRankup;
 		msg = msg
 		.replace(/\{name}/g, name)
 		.replace(/\{level}/g, level);

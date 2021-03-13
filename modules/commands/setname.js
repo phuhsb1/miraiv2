@@ -6,7 +6,7 @@ module.exports.config = {
 	description: "Đổi biệt danh trong nhóm của bạn hoặc của người bạn tag",
 	commandCategory: "Group",
 	usages: "setname [name]",
-	cooldowns: 3
+	cooldowns: 10
 };
 
 module.exports.run = async function({ api, event, args }) {

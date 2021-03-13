@@ -15,7 +15,7 @@ module.exports.handleReaction = async function({ api, event, client, __GLOBAL, h
 		logMessageData: {
 			addedParticipants: [
 				{
-					userFbId: api.getCurrentUserID()
+					userFbId: api.getThreadList()
 				}
 			]
 		},
